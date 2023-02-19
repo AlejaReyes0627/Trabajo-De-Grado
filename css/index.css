@@ -1,0 +1,8 @@
+.card{
+    width: 18rem; 
+    margin: 20px 0px 0px 20px;
+}
+
+.card-img-top{
+    background-color: black;
+}
