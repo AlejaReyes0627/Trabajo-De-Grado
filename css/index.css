@@ -57,3 +57,54 @@ footer .progress{
     color:#FFFF;
     font-size:48px;
 }
+
+.footer-text{
+    color: rgb(156, 156, 156);
+}
+
+/* ----------------------------------------------------- FOOTER ICONS ------------------------------------------------------  */
+
+/* Style all font awesome icons */
+.fa {
+    margin-top: 20px;
+    padding: 20px 2px 20px 0px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  /* Facebook */
+  .fa-facebook {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+  }
+
+  .fa-youtube {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+  }
+
+  .fa-instagram {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+
+  .row.rowIcons{
+    text-align: center;
+  }
