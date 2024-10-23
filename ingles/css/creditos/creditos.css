@@ -1,0 +1,183 @@
+/* ----------------------------------------------------- NAVBAR ------------------------------------------------------  */
+
+/*Todo el navbar*/
+nav {
+    background-color: #0F1F39;
+  }
+  
+  /*Cada item del navbar*/
+  .navItem.navbar-brand {
+    color: #ffff;
+    padding: 20px 30px 20px 30px;
+    font-family: 'Corbel';
+  }
+  
+  /* Lo que pasará cuando le pasemos el mouse encima */
+  .navItem.navbar-brand:hover {
+    color: #ffff;
+    background-color: #14294b;
+  }
+  
+  
+  /* ----------------------------------------------------- FOOTER ------------------------------------------------------  */
+  
+  /* Todo el footer */
+  footer {
+    background-color: #0D0D0D;
+    width: 100%;
+  }
+  
+  /* Mensaje del footer */
+  .footerMsg {
+    color: #ffff;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  /* Barra de progreso para cada item del footer */
+  .col .progress {
+    height: 1px;
+  }
+  
+  /* Linea separadora entre los items y los derechos de autor */
+  .col .progress .progress-bar {
+    width: 25%;
+  }
+  
+  /* Lo que esté dentro del footer de la clase progress */
+  footer .progress {
+    height: 1px;
+  }
+  
+  /* Darle color a los íconos */
+  .container .row .col .material-icons {
+    color: #FFFF;
+    font-size: 48px;
+  }
+  
+  /* Color del texto del footer */
+  .footer-text {
+    color: rgb(156, 156, 156);
+  }
+  
+  /* ----------------------------------------------------- FOOTER ICONS ------------------------------------------------------  */
+  
+  .fa {
+    margin-top: 5px;
+    padding: 20px 0px 20px 0px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Facebook */
+  .fa-facebook-f {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+  }
+  
+  /* Youtube */
+  .fa-youtube {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+  }
+  
+  /* Instagram */
+  .fa-instagram {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Alinear los iconos */
+  .row.rowIcons {
+    text-align: center;
+  }
+  
+  
+  /* ----------------------------------------------------- GCS ------------------------------------------------------  */
+  
+  /* Todo el bloque para el card presentación */
+  body #gcs-main {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .square-box{
+    border: 1px solid;
+  }
+  
+  .breadcumbIndex{
+    background-color: white;
+  }
+  
+.container .card{
+  margin-bottom: 10px;
+}
+
+  /* Decoración para el header del card ingsoft */
+  .container .card .card-header{
+    background-color: #0F1F39;
+    color: #ffff;
+  }
+  
+  /* Decoración para el footer del card ingsoft */
+  .container .card .card-footer{
+    background-color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /*  */
+  .container .card .card-body{
+    text-align: center;
+  }
+  
+  .container .row .col-2 .list-group{
+    margin-top: 20px;
+    margin-left: 6px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #0F1F39;
+    border-width: 1px;
+  }
+  
+  .container .row .col-2 .list-group hr{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  }
+  
+  .container .row .col-2 .list-group a:hover{
+    background-color: #0F1F39;
+    color: white;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+  
+.box {
+    margin-top: 50px;
+    background:#FFF;
+    text-align: center;
+}
+
+.box-title {
+    color: #428bca;
+}

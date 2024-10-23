@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="Alejandra Reyes and Maria José Villalba" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DOER - Software Engineering
+    </title>
+    <link rel="icon" type="image/x-icon" href="../../resources/icons/window-principal.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='../../css/gcs-sidebar/auditoria-gcs.css'>
+    <script src='../../js/index.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-------------------------------------------------------NAVBAR------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../../resources/images/Unibague-4.0.png" width="200" height="40">
+            </a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" onclick="mostrarme()" href="../inge-soft.html">
+                            Software Engineering
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../des-web.html">
+                            Web Development
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../gestionyConfiguracionDelSoftware.html">
+                            SCM
+                        </a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <div class="row">
+                        <div class="col" style="padding: 0px 0px 0px 0px;">
+                            <a href="../../../español/html/gcs-sidebar/auditoria-gcs.html">
+                                <img src="../../resources/icons/españa.ico" style="width: 90%;">
+                            </a>
+
+                        </div>
+                        <div class="col" style="padding: 0px 0px 0px 0px;">
+                            <a href="../../../ingles/html/gcs-sidebar/auditoria-gcs.html">
+                                <img src="../../resources/icons/ingles.ico" style="width:90%">
+                            </a>
+
+                        </div>
+                        <div class="col">
+                            <a class="navbar-brand" target="_blank" href="https://www.unibague.edu.co/">
+                                <img src="../../resources/images/logo_acreditacion.png" width="200" height="50">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------------------------------------------------------------------------------------------------->
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <div class="container">
+        <div class="square-box">
+            <div class="row">
+                <div class="d-flex flex-row">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcumbIndex">
+                        <ol class="breadcrumb p-2">
+                            <li class="breadcrumb-item "><a href="../index.html"
+                                    style="text-decoration:none">Introduction</a></li>
+                            <li class="breadcrumb-item"><a href="../gestionyConfiguracionDelSoftware.html"
+                                    style="text-decoration:none">Configuration Management</a></li>
+                            <li class="breadcrumb-item active">Software configuration audit</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="list-group">
+                        <a href="./elementos-de-configuracion.html" class="list-group-item list-group-item-action"
+                            aria-current="true">
+                            Configuration Items
+                        </a>
+                        <hr>
+                        <a href="./actividades-de-gcs.html" class="list-group-item list-group-item-action">SCM
+                            Activities</a>
+                        <hr>
+                        <a href="./auditoria-gcs.html" class="list-group-item list-group-item-action active">Software
+                            Configuration Audit</a>
+                        <hr>
+                        <a href="./informes-de-estado.html" class="list-group-item list-group-item-action">Status
+                            Reports</a>
+                        <hr>
+                        <a href="./sistemas-control-versiones.html"
+                            class="list-group-item list-group-item-action">Version Control Systems</a>
+                        <hr>
+                        <a href="./autoevaluacion-gcs.html" class="list-group-item list-group-item-action">Self
+                            appraisal</a>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <section id="aud-main">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <h5 class="card-header">
+                                    <strong>
+                                        Software Configuration Audit
+                                    </strong>
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Software configuration auditing is a process that aims
+                                    to assess and verify the configuration of software systems to ensure
+                                    that they meet established security, performance and operational
+                                    standards. Here are some general steps you can follow when performing
+                                    a software configuration audit:
+                                </p>
+                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                    <div class="col">
+                                        <div class="card">
+                                            <i class="mt-2 fa-solid fa-1"></i>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Establish the audit objectives</h5>
+                                                <p class="card-text">Determine qué aspectos de la configuración del
+                                                    software se van a auditar, como la seguridad, el rendimiento, la
+                                                    integridad de los datos, etc.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <i class="mt-2 fa-solid fa-2"></i>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Identify configuration standards</h5>
+                                                <p class="card-text">Define the configuration standards that
+                                                    must be met. These standards may come from industry best
+                                                    practices, internal organizational policies or external
+                                                    regulations.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <i class="mt-2 fa-solid fa-3"></i>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Gathering information</h5>
+                                                <p class="card-text">Gather all relevant details about the
+                                                    software to be audited, including technical documentation,
+                                                    configuration manuals, configuration files, previous
+                                                    audit logs, etc.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <i class="mt-2 fa-solid fa-4"></i>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Conduct a gap analysis</h5>
+                                                <p class="card-text">Compare the current software configuration
+                                                    with the defined standards and determine any gaps or
+                                                    deviations. Identify problem areas that require attention.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <i class="mt-2 fa-solid fa-5"></i>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Assessing risks</h5>
+                                                <p class="card-text">Assess the risks associated with the
+                                                    identified configuration gaps. Determine the potential
+                                                    impact of these gaps on the security, performance or
+                                                    operation of the software.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <i class="mt-2 fa-solid fa-7"></i>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Provide recommendations</h5>
+                                                <p class="card-text">Generate a detailed report describing
+                                                    the gaps found, associated risks, and recommendations
+                                                    to correct the gaps and improve the software configuration.
+                                                    These recommendations may include configuration changes,
+                                                    software updates, security patches, etc.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <i class="mt-2 fa-solid fa-8"></i>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Implement the recommendations</h5>
+                                                <p class="card-text">Work with the responsible teams to
+                                                    implement the proposed recommendations. Follow up
+                                                    to ensure that gaps are properly addressed.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <i class="mt-2 fa-solid fa-9"></i>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Conduct periodic audits</h5>
+                                                <p class="card-text">Software configuration auditing should be
+                                                    an ongoing process. Conduct periodic audits to ensure that
+                                                    the configuration remains in line with established standards
+                                                    and to identify and address new gaps that may arise.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <p class="card-text">
+                                    <strong>Here are some examples of areas that can be audited in the software
+                                        configuration:</strong>
+                                    <br><br>
+                                        <img src="../../resources/icons/audit-software.svg" alt="Diagrama de auditoría">
+                                </p>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                                Last edition in
+                                <script>
+                                    document.write(anio)
+                                </script>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-------------------------------------------------------FOOTER------------------------------------------------------------->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h6 class="footerMsg">
+                    <strong>
+                        Social Networks
+                    </strong>
+                </h6>
+                <div class="row rowIcons">
+                    <div class="col">
+                        <a target="_blank" href="https://www.facebook.com/SoyUnibague/"
+                            class="fa fa-brands fa-facebook-f fa-xl"></a>
+                        <a target="_blank" href="https://twitter.com/unibagueoficial"
+                            class="fa fa-brands fa-twitter fa-xl"></a>
+                        <a target="_blank" href="https://www.youtube.com/user/universidadeibague"
+                            class="fa fa-brands fa-youtube fa-xl"></a>
+                        <a target="_blank" href="https://www.instagram.com/soyunibague/"
+                            class="fa fa-brands fa-instagram fa-xl"></a>
+                    </div>
+                </div>
+                <br>
+                <div class="row text-sm-center">
+                    <h6><a type="button" class="btn btn-outline-light" href="../creditos/creditos.html"> Credits
+                    </a></h6>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="footerMsg">DOER (Digital Open Educational Resource) Software Engineering - Copyright
+                <script>document.write(anio)</script> ©
+            </p>
+        </div>
+    </div>
+
+</footer>
+<!----------------------------------------------------------------------------------------------------------------------->
+
+</html>

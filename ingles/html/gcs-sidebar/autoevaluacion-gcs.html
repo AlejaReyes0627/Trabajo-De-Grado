@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="Alejandra Reyes and Maria José Villalba" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DOER - Software Engineering
+    </title>
+    <link rel="icon" type="image/x-icon" href="../../resources/icons/window-principal.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='../../css/gcs-sidebar/autoevaluacion-gcs.css'>
+    <script src='../../js/index.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+    <meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+    <script type="text/javascript" src="../../js/GCS-Autoevaluacion/exe_jquery.js"></script>
+    <script type="text/javascript" src="../../js/GCS-Autoevaluacion/common_i18n.js"></script>
+    <script type="text/javascript" src="../../js/GCS-Autoevaluacion/common.js"></script>
+
+    <!-------------------------------------------------------NAVBAR------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../../resources/images/Unibague-4.0.png" width="200" height="40">
+            </a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../inge-soft.html">
+                            Software Engineering
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../des-web.html">
+                            Web Development
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../gestionyConfiguracionDelSoftware.html">
+                            SCM
+                        </a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <div class="row">
+                        <div class="col" style="padding: 0px 0px 0px 0px;">
+                            <a href="../../../español/html/gcs-sidebar/actividades-de-gcs.html">
+                                <img src="../../resources/icons/españa.ico" style="width: 90%;">
+                            </a>
+
+                        </div>
+                        <div class="col" style="padding: 0px 0px 0px 0px;">
+                            <a href="../../../ingles/html/gcs-sidebar/autoevaluacion-gcs.html">
+                                <img src="../../resources/icons/ingles.ico" style="width:90%">
+                            </a>
+
+                        </div>
+                        <div class="col">
+                            <a class="navbar-brand" target="_blank" href="https://www.unibague.edu.co/">
+                                <img src="../../resources/images/logo_acreditacion.png" width="200" height="50">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!----------------------------------------------------------------------------------------------------------------------->
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <div class="container">
+        <div class="square-box">
+            <div class="row">
+                <div class="d-flex flex-row">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcumbIndex">
+                        <ol class="breadcrumb p-2">
+                            <li class="breadcrumb-item "><a href="../index.html"
+                                    style="text-decoration:none">Introduction</a></li>
+                            <li class="breadcrumb-item"><a href="../gestionyConfiguracionDelSoftware.html"
+                                    style="text-decoration:none">Configuration Management</a></li>
+                            <li class="breadcrumb-item active">Self appraisal</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="list-group">
+                        <a href="./elementos-de-configuracion.html" class="list-group-item list-group-item-action"
+                            aria-current="true">
+                            Configuration Items
+                        </a>
+                        <hr>
+                        <a href="./actividades-de-gcs.html" class="list-group-item list-group-item-action">SCM
+                            Activities</a>
+                        <hr>
+                        <a href="./auditoria-gcs.html" class="list-group-item list-group-item-action">Software
+                            Configuration Audit</a>
+                        <hr>
+                        <a href="./informes-de-estado.html" class="list-group-item list-group-item-action">Status
+                            Reports</a>
+                        <hr>
+                        <a href="./sistemas-control-versiones.html"
+                            class="list-group-item list-group-item-action">Version Control Systems</a>
+                        <hr>
+                        <a href="./autoevaluacion-gcs.html" class="list-group-item list-group-item-action active">Self
+                            appraisal</a>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <section id="auto-main">
+                        <div class="card" style="max-width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-header">Self appraisal</h5>
+                                <p class="card-text">
+
+                                    <body class="exe-single-page">
+                                        <script type="text/javascript">document.body.className += " js"</script>
+                                        <div id="content">
+                                            <section id="main">
+                                                <article class="node level-1-node" id="exe-node-0">
+                                                    <article
+                                                        class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question"
+                                                        id="id0-0">
+                                                        <div class="iDevice emphasis1">
+                                                            <div class="iDevice_inner">
+                                                                <div class="iDevice_content_wrapper">
+                                                                    <section class="question">
+                                                                        <form name="multi-choice-form-0_87" action="#"
+                                                                            onsubmit="return false"
+                                                                            class="activity-form">
+                                                                            <h1 class="js-sr-av">Question</h1>
+                                                                            <div id="taquestion0_87"
+                                                                                class="block question iDevice_content">
+                                                                                <h4>Software configuration management
+                                                                                    has as its main objective to ensure
+                                                                                    the ______ and ______ of
+                                                                                    configuration items.</h4>
+                                                                            </div>
+                                                                            <section class="iDevice_answers">
+                                                                                <h1 class="js-sr-av">Answers</h1>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_90"
+                                                                                            class="sr-av">
+                                                                                            <a href="#answer-0_90">Option
+                                                                                                1</a></label>
+                                                                                        <input type="radio"
+                                                                                            name="option0_87" id="i0_90"
+                                                                                            class="exe-radio-option exe-radio-option-0-4-0_87-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_90">
+                                                                                        <div id="taans0_90"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>Quality - control</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_93"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_93">Option
+                                                                                                2</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_87" id="i0_93"
+                                                                                            class="exe-radio-option exe-radio-option-1-4-0_87-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_93">
+                                                                                        <div id="taans0_93"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>Integrity - traceability
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_241"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_241">Option
+                                                                                                3</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_87"
+                                                                                            id="i0_241"
+                                                                                            class="exe-radio-option exe-radio-option-2-4-0_87-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_241">
+                                                                                        <div id="taans0_241"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>Safety - efficiency
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_244"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_244">Option
+                                                                                                4</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_87"
+                                                                                            id="i0_244"
+                                                                                            class="exe-radio-option exe-radio-option-3-4-0_87-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_244">
+                                                                                        <div id="taans0_244"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>All the above answers are
+                                                                                                correct</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                            <section
+                                                                                class="iDevice_feedbacks js-feedback">
+                                                                                <h1 class="js-sr-av">Feedback
+                                                                                </h1>
+                                                                                <section id="sa0b0_87"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_90"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa1b0_87"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_93"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="font-family: 'times new roman', times, serif; color: #008000;">✓
+                                                                                                Correct! Software
+                                                                                                configuration management
+                                                                                                seeks to ensure the
+                                                                                                integrity, that is, the
+                                                                                                consistency and
+                                                                                                correctness of
+                                                                                                configuration items. In
+                                                                                                addition, it seeks to
+                                                                                                maintain traceability,
+                                                                                                that is, the ability to
+                                                                                                track and understand
+                                                                                                changes made to
+                                                                                                configuration items over
+                                                                                                time.</span>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa2b0_87"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_241"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="font-family: 'times new roman', times, serif; color: #ff0000;">Try
+                                                                                                again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa3b0_87"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_244"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                        </form>
+                                                                        <section
+                                                                            class="iDevice_solution feedback js-hidden">
+                                                                            <h1>Solution</h1>
+                                                                            <ol>
+                                                                                <li><a
+                                                                                        href="#answer-0_90">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa0b0_87">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a href="#answer-0_93">Correct
+                                                                                        option </a><span>
+                                                                                        (<a
+                                                                                            href="#sa1b0_87">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_241">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa2b0_87">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_244">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa3b0_87">Feedback</a>)</span>
+                                                                                </li>
+                                                                            </ol>
+                                                                        </section>
+                                                                    </section>
+                                                                    <br>
+                                                                    <section class="question">
+                                                                        <form name="multi-choice-form-0_247" action="#"
+                                                                            onsubmit="return false"
+                                                                            class="activity-form">
+                                                                            <h1 class="js-sr-av">Question</h1>
+                                                                            <div id="taquestion0_247"
+                                                                                class="block question iDevice_content">
+                                                                                <h4>¿What is the main purpose of
+                                                                                    software configuration management?
+                                                                                </h4>
+                                                                            </div>
+                                                                            <section class="iDevice_answers">
+                                                                                <h1 class="js-sr-av">Answers</h1>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_250"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_250">Option
+                                                                                                1</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_247"
+                                                                                            id="i0_250"
+                                                                                            class="exe-radio-option exe-radio-option-0-4-0_247-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_250">
+                                                                                        <div id="taans0_250"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>Maintain control of
+                                                                                                software changes</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_253"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_253">Option
+                                                                                                2</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_247"
+                                                                                            id="i0_253"
+                                                                                            class="exe-radio-option exe-radio-option-1-4-0_247-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_253">
+                                                                                        <div id="taans0_253"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>Ensure software quality
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_256"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_256">Option
+                                                                                                3</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_247"
+                                                                                            id="i0_256"
+                                                                                            class="exe-radio-option exe-radio-option-2-4-0_247-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_256">
+                                                                                        <div id="taans0_256"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>Develop new
+                                                                                                functionalities in the
+                                                                                                software</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_259"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_259">Option
+                                                                                                4</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_247"
+                                                                                            id="i0_259"
+                                                                                            class="exe-radio-option exe-radio-option-3-4-0_247-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_259">
+                                                                                        <div id="taans0_259"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>All the above answers are
+                                                                                                correct</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                            <section
+                                                                                class="iDevice_feedbacks js-feedback">
+                                                                                <h1 class="js-sr-av">Feedback
+                                                                                </h1>
+                                                                                <section id="sa0b0_247"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_250"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #008000; font-family: 'times new roman', times, serif;">✓
+                                                                                                Correct! Software
+                                                                                                configuration management
+                                                                                                is responsible for
+                                                                                                maintaining control of
+                                                                                                changes to the software,
+                                                                                                ensuring that all
+                                                                                                versions and changes are
+                                                                                                properly identified,
+                                                                                                recorded and
+                                                                                                controlled.</span>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa1b0_247"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_253"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="font-family: 'times new roman', times, serif; color: #ff0000;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa2b0_247"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_256"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa3b0_247"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_259"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                        </form>
+                                                                        <section
+                                                                            class="iDevice_solution feedback js-hidden">
+                                                                            <h1>Solution</h1>
+                                                                            <ol>
+                                                                                <li><a href="#answer-0_250">Correct
+                                                                                        option</a><span> (<a
+                                                                                            href="#sa0b0_247">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_253">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa1b0_247">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_256">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa2b0_247">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_259">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa3b0_247">Feedback</a>)</span>
+                                                                                </li>
+                                                                            </ol>
+                                                                        </section>
+                                                                    </section>
+                                                                    <br>
+                                                                    <section class="question">
+                                                                        <form name="multi-choice-form-0_262" action="#"
+                                                                            onsubmit="return false"
+                                                                            class="activity-form">
+                                                                            <h1 class="js-sr-av">Question</h1>
+                                                                            <div id="taquestion0_262"
+                                                                                class="block question iDevice_content">
+                                                                                <h4>¿What is the main purpose of
+                                                                                    software release management?</h4>
+                                                                            </div>
+                                                                            <section class="iDevice_answers">
+                                                                                <h1 class="js-sr-av">Answers</h1>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_265"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_265">Option
+                                                                                                1</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_262"
+                                                                                            id="i0_265"
+                                                                                            class="exe-radio-option exe-radio-option-0-4-0_262-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_265">
+                                                                                        <div id="taans0_265"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>Maintain software
+                                                                                                integrity
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_268"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_268">Option
+                                                                                                2</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_262"
+                                                                                            id="i0_268"
+                                                                                            class="exe-radio-option exe-radio-option-1-4-0_262-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_268">
+                                                                                        <div id="taans0_268"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>Control access to
+                                                                                                software</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_271"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_271">Option
+                                                                                                3</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_262"
+                                                                                            id="i0_271"
+                                                                                            class="exe-radio-option exe-radio-option-2-4-0_262-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_271">
+                                                                                        <div id="taans0_271"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>Identify and control
+                                                                                                software changes</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_274"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_274">Option
+                                                                                                4</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_262"
+                                                                                            id="i0_274"
+                                                                                            class="exe-radio-option exe-radio-option-3-4-0_262-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_274">
+                                                                                        <div id="taans0_274"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>Ensuring software meets
+                                                                                                customer requirements
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                            <section
+                                                                                class="iDevice_feedbacks js-feedback">
+                                                                                <h1 class="js-sr-av">Feedback
+                                                                                </h1>
+                                                                                <section id="sa0b0_262"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_265"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa1b0_262"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_268"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa2b0_262"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_271"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #008000; font-family: 'times new roman', times, serif;">✓
+                                                                                                Correct! Software
+                                                                                                version management is
+                                                                                                responsible for
+                                                                                                identifying and
+                                                                                                controlling changes to
+                                                                                                the software, ensuring
+                                                                                                that each version is
+                                                                                                clearly identifiable and
+                                                                                                that changes are
+                                                                                                properly documented and
+                                                                                                approved.</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa3b0_262"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_274"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                        </form>
+                                                                        <section
+                                                                            class="iDevice_solution feedback js-hidden">
+                                                                            <h1>Solution</h1>
+                                                                            <ol>
+                                                                                <li><a
+                                                                                        href="#answer-0_265">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa0b0_262">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_268">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa1b0_262">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a href="#answer-0_271">Correct
+                                                                                        option</a><span> (<a
+                                                                                            href="#sa2b0_262">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_274">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa3b0_262">Feedback</a>)</span>
+                                                                                </li>
+                                                                            </ol>
+                                                                        </section>
+                                                                    </section>
+                                                                    <br>
+                                                                    <section class="question">
+                                                                        <form name="multi-choice-form-0_277" action="#"
+                                                                            onsubmit="return false"
+                                                                            class="activity-form">
+                                                                            <h1 class="js-sr-av">Question</h1>
+                                                                            <div id="taquestion0_277"
+                                                                                class="block question iDevice_content">
+                                                                                <h4>¿What is a version control system?
+                                                                                </h4>
+                                                                            </div>
+                                                                            <section class="iDevice_answers">
+                                                                                <h1 class="js-sr-av">Answers</h1>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_280"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_280">Option
+                                                                                                1</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_277"
+                                                                                            id="i0_280"
+                                                                                            class="exe-radio-option exe-radio-option-0-4-0_277-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_280">
+                                                                                        <div id="taans0_280"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A system that controls
+                                                                                                software quality</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_283"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_283">Option
+                                                                                                2</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_277"
+                                                                                            id="i0_283"
+                                                                                            class="exe-radio-option exe-radio-option-1-4-0_277-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_283">
+                                                                                        <div id="taans0_283"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A system that controls
+                                                                                                access to software</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_286"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_286">Option
+                                                                                                3</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_277"
+                                                                                            id="i0_286"
+                                                                                            class="exe-radio-option exe-radio-option-2-4-0_277-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_286">
+                                                                                        <div id="taans0_286"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A system that controls
+                                                                                                changes to the software
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_289"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_289">Option
+                                                                                                4</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_277"
+                                                                                            id="i0_289"
+                                                                                            class="exe-radio-option exe-radio-option-3-4-0_277-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_289">
+                                                                                        <div id="taans0_289"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A system that controls
+                                                                                                software development</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                            <section
+                                                                                class="iDevice_feedbacks js-feedback">
+                                                                                <h1 class="js-sr-av">Feedback
+                                                                                </h1>
+                                                                                <section id="sa0b0_277"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_280"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa1b0_277"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_283"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa2b0_277"
+                                                                                    class="feedback js-hidden">
+                                                                                    z <div id="taf0_286"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="font-family: 'times new roman', times, serif; color: #008000;">✓
+                                                                                                Correct! A version
+                                                                                                control system is a
+                                                                                                system that is
+                                                                                                responsible for
+                                                                                                controlling changes in
+                                                                                                the software, allowing
+                                                                                                the management and
+                                                                                                control of all versions
+                                                                                                of the source code and
+                                                                                                associated
+                                                                                                documents.</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa3b0_277"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_289"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                        </form>
+                                                                        <section
+                                                                            class="iDevice_solution feedback js-hidden">
+                                                                            <h1>Solution</h1>
+                                                                            <ol>
+                                                                                <li><a
+                                                                                        href="#answer-0_280">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa0b0_277">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_283">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa1b0_277">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a href="#answer-0_286">Correct
+                                                                                        Option</a><span> (<a
+                                                                                            href="#sa2b0_277">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_289">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa3b0_277">Feedback</a>)</span>
+                                                                                </li>
+                                                                            </ol>
+                                                                        </section>
+                                                                    </section>
+                                                                    <br>
+                                                                    <section class="question">
+                                                                        <form name="multi-choice-form-0_292" action="#"
+                                                                            onsubmit="return false"
+                                                                            class="activity-form">
+                                                                            <h1 class="js-sr-av">Question</h1>
+                                                                            <div id="taquestion0_292"
+                                                                                class="block question iDevice_content">
+                                                                                <h4>What is release management in
+                                                                                    software management</h4>
+                                                                            </div>
+                                                                            <section class="iDevice_answers">
+                                                                                <h1 class="js-sr-av">Answers</h1>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_295"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_295">Option
+                                                                                                1</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_292"
+                                                                                            id="i0_295"
+                                                                                            class="exe-radio-option exe-radio-option-0-4-0_292-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_295">
+                                                                                        <div id="taans0_295"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>The process of releasing
+                                                                                                the software to the
+                                                                                                market for sale or
+                                                                                                distribution
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_298"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_298">Option
+                                                                                                2</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_292"
+                                                                                            id="i0_298"
+                                                                                            class="exe-radio-option exe-radio-option-1-4-0_292-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_298">
+                                                                                        <div id="taans0_298"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>Management of software
+                                                                                                project resources and
+                                                                                                personnel
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_301"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_301">Option
+                                                                                                3</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_292"
+                                                                                            id="i0_301"
+                                                                                            class="exe-radio-option exe-radio-option-2-4-0_292-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_301">
+                                                                                        <div id="taans0_301"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>The process of planning,
+                                                                                                coordinating, and
+                                                                                                controlling the
+                                                                                                distribution of software
+                                                                                                releases
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_304"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_304">Option
+                                                                                                4</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_292"
+                                                                                            id="i0_304"
+                                                                                            class="exe-radio-option exe-radio-option-3-4-0_292-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_304">
+                                                                                        <div id="taans0_304"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>The process of ensuring
+                                                                                                that software meets
+                                                                                                customer requirements
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                            <section
+                                                                                class="iDevice_feedbacks js-feedback">
+                                                                                <h1 class="js-sr-av">Feedback
+                                                                                </h1>
+                                                                                <section id="sa0b0_292"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_295"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa1b0_292"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_298"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa2b0_292"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_301"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #008000; font-family: 'times new roman', times, serif;">✓
+                                                                                                Correct! Release
+                                                                                                management is the
+                                                                                                process of planning,
+                                                                                                coordinating, and
+                                                                                                controlling the
+                                                                                                distribution of software
+                                                                                                versions. It includes
+                                                                                                activities such as
+                                                                                                identifying
+                                                                                                deliverables, planning
+                                                                                                release dates, and
+                                                                                                coordinating delivery of
+                                                                                                the software to users or
+                                                                                                customers.</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa3b0_292"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_304"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                        </form>
+                                                                        <section
+                                                                            class="iDevice_solution feedback js-hidden">
+                                                                            <h1>Solution</h1>
+                                                                            <ol>
+                                                                                <li><a
+                                                                                        href="#answer-0_295">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa0b0_292">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_298">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa1b0_292">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a href="#answer-0_301">Correct
+                                                                                        Option</a><span> (<a
+                                                                                            href="#sa2b0_292">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_304">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa3b0_292">Feedback</a>)</span>
+                                                                                </li>
+                                                                            </ol>
+                                                                        </section>
+                                                                    </section>
+                                                                    <br>
+                                                                    <section class="question">
+                                                                        <form name="multi-choice-form-0_307" action="#"
+                                                                            onsubmit="return false"
+                                                                            class="activity-form">
+                                                                            <h1 class="js-sr-av">Question</h1>
+                                                                            <div id="taquestion0_307"
+                                                                                class="block question iDevice_content">
+                                                                                <h4>¿What is Software Configuration
+                                                                                    Management (SCM)?</h4>
+                                                                            </div>
+                                                                            <section class="iDevice_answers">
+                                                                                <h1 class="js-sr-av">Answers</h1>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_310"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_310">Option
+                                                                                                1</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_307"
+                                                                                            id="i0_310"
+                                                                                            class="exe-radio-option exe-radio-option-0-4-0_307-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_310">
+                                                                                        <div id="taans0_310"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A process for managing
+                                                                                                and controlling changes
+                                                                                                to the software
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_313"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_313">Option
+                                                                                                2</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_307"
+                                                                                            id="i0_313"
+                                                                                            class="exe-radio-option exe-radio-option-1-4-0_307-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_313">
+                                                                                        <div id="taans0_313"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A process to ensure
+                                                                                                software quality</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_316"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_316">Option
+                                                                                                3</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_307"
+                                                                                            id="i0_316"
+                                                                                            class="exe-radio-option exe-radio-option-2-4-0_307-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_316">
+                                                                                        <div id="taans0_316"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A process for designing
+                                                                                                software architecture
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_319"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_319">Option
+                                                                                                4</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_307"
+                                                                                            id="i0_319"
+                                                                                            class="exe-radio-option exe-radio-option-3-4-0_307-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_319">
+                                                                                        <div id="taans0_319"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A process for documenting
+                                                                                                software requirements
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                            <section
+                                                                                class="iDevice_feedbacks js-feedback">
+                                                                                <h1 class="js-sr-av">Feedback
+                                                                                </h1>
+                                                                                <section id="sa0b0_307"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_310"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #008000; font-family: 'times new roman', times, serif;">✓
+                                                                                                Correct! Software
+                                                                                                configuration management
+                                                                                                is a process used to
+                                                                                                manage and control
+                                                                                                changes to software
+                                                                                                throughout its life
+                                                                                                cycle. It includes
+                                                                                                activities such as
+                                                                                                version control, change
+                                                                                                control, release
+                                                                                                management, and software
+                                                                                                configuration
+                                                                                                management.</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa1b0_307"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_313"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa2b0_307"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_316"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa3b0_307"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_319"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                        </form>
+                                                                        <section
+                                                                            class="iDevice_solution feedback js-hidden">
+                                                                            <h1>Solution</h1>
+                                                                            <ol>
+                                                                                <li><a href="#answer-0_310">Correct
+                                                                                        Option</a><span> (<a
+                                                                                            href="#sa0b0_307">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_313">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa1b0_307">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_316">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa2b0_307">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_319">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa3b0_307">Feedback</a>)</span>
+                                                                                </li>
+                                                                            </ol>
+                                                                        </section>
+                                                                    </section>
+                                                                    <br>
+                                                                    <section class="question">
+                                                                        <form name="multi-choice-form-0_322" action="#"
+                                                                            onsubmit="return false"
+                                                                            class="activity-form">
+                                                                            <h1 class="js-sr-av">Question</h1>
+                                                                            <div id="taquestion0_322"
+                                                                                class="block question iDevice_content">
+                                                                                <h4>¿What is a backup copy in the
+                                                                                    context of software management?
+                                                                                </h4>
+                                                                            </div>
+                                                                            <section class="iDevice_answers">
+                                                                                <h1 class="js-sr-av">Answers</h1>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_325"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_325">Option
+                                                                                                1</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_322"
+                                                                                            id="i0_325"
+                                                                                            class="exe-radio-option exe-radio-option-0-4-0_322-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_325">
+                                                                                        <div id="taans0_325"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A procedure to migrate
+                                                                                                the software to a new
+                                                                                                server</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_328"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_328">Option
+                                                                                                2</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_322"
+                                                                                            id="i0_328"
+                                                                                            class="exe-radio-option exe-radio-option-1-4-0_322-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_328">
+                                                                                        <div id="taans0_328"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A duplicate copy of the
+                                                                                                software files, used to
+                                                                                                recover data in case of
+                                                                                                loss or failure</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_331"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_331">Option
+                                                                                                3</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_322"
+                                                                                            id="i0_331"
+                                                                                            class="exe-radio-option exe-radio-option-2-4-0_322-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_331">
+                                                                                        <div id="taans0_331"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A security measure to
+                                                                                                protect software from
+                                                                                                cyber attacks
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_334"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_334">Option
+                                                                                                4</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_322"
+                                                                                            id="i0_334"
+                                                                                            class="exe-radio-option exe-radio-option-3-4-0_322-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_334">
+                                                                                        <div id="taans0_334"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>A technique for improving
+                                                                                                software performance and
+                                                                                                efficiency</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                            <section
+                                                                                class="iDevice_feedbacks js-feedback">
+                                                                                <h1 class="js-sr-av">Feedback
+                                                                                </h1>
+                                                                                <section id="sa0b0_322"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_325"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa1b0_322"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_328"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #008000; font-family: 'times new roman', times, serif;">✓
+                                                                                                Correct! A backup is a
+                                                                                                duplicate copy of the
+                                                                                                software files that is
+                                                                                                made for the purpose of
+                                                                                                data recovery in the
+                                                                                                event of loss, failure,
+                                                                                                or disaster. It is an
+                                                                                                important precautionary
+                                                                                                measure to ensure the
+                                                                                                availability and
+                                                                                                integrity of the
+                                                                                                data.</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa2b0_322"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_331"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa3b0_322"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_334"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                        </form>
+                                                                        <section
+                                                                            class="iDevice_solution feedback js-hidden">
+                                                                            <h1>Solution</h1>
+                                                                            <ol>
+                                                                                <li><a
+                                                                                        href="#answer-0_325">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa0b0_322">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a href="#answer-0_328">Correct
+                                                                                        Option</a><span> (<a
+                                                                                            href="#sa1b0_322">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_331">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa2b0_322">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_334">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa3b0_322">Feedback</a>)</span>
+                                                                                </li>
+                                                                            </ol>
+                                                                        </section>
+                                                                    </section>
+                                                                    <br>
+                                                                    <section class="question">
+                                                                        <form name="multi-choice-form-0_337" action="#"
+                                                                            onsubmit="return false"
+                                                                            class="activity-form">
+                                                                            <h1 class="js-sr-av">Question</h1>
+                                                                            <div id="taquestion0_337"
+                                                                                class="block question iDevice_content">
+                                                                                <h4>¿What is the main branch (or trunk)
+                                                                                    in a version control system?
+                                                                                </h4>
+                                                                            </div>
+                                                                            <section class="iDevice_answers">
+                                                                                <h1 class="js-sr-av">Answers</h1>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_340"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_340">Option
+                                                                                                1</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_337"
+                                                                                            id="i0_340"
+                                                                                            class="exe-radio-option exe-radio-option-0-4-0_337-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_340">
+                                                                                        <div id="taans0_340"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>The branch where the
+                                                                                                configuration files are
+                                                                                                stored</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_343"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_343">Option
+                                                                                                2</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_337"
+                                                                                            id="i0_343"
+                                                                                            class="exe-radio-option exe-radio-option-1-4-0_337-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_343">
+                                                                                        <div id="taans0_343"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>The branch where the test
+                                                                                                files are stored</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_346"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_346">Option
+                                                                                                3</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_337"
+                                                                                            id="i0_346"
+                                                                                            class="exe-radio-option exe-radio-option-2-4-0_337-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_346">
+                                                                                        <div id="taans0_346"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>The branch where design
+                                                                                                documents are stored</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section class="iDevice_answer">
+                                                                                    <p
+                                                                                        class="iDevice_answer-field js-required">
+                                                                                        <label for="i0_349"
+                                                                                            class="sr-av"><a
+                                                                                                href="#answer-0_349">Option
+                                                                                                4</a></label><input
+                                                                                            type="radio"
+                                                                                            name="option0_337"
+                                                                                            id="i0_349"
+                                                                                            class="exe-radio-option exe-radio-option-3-4-0_337-multi" />
+                                                                                    </p>
+                                                                                    <div class="iDevice_answer-content"
+                                                                                        id="answer-0_349">
+                                                                                        <div id="taans0_349"
+                                                                                            class="block iDevice_content">
+                                                                                            <p>The main branch of
+                                                                                                software development</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                            <section
+                                                                                class="iDevice_feedbacks js-feedback">
+                                                                                <h1 class="js-sr-av">Feedback
+                                                                                </h1>
+                                                                                <section id="sa0b0_337"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_340"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa1b0_337"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_343"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa2b0_337"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_346"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #ff0000; font-family: 'times new roman', times, serif;">Try
+                                                                                                Again</span></p>
+                                                                                    </div>
+                                                                                </section>
+                                                                                <section id="sa3b0_337"
+                                                                                    class="feedback js-hidden">
+                                                                                    <div id="taf0_349"
+                                                                                        class=" iDevice_content">
+                                                                                        <p><span
+                                                                                                style="color: #008000; font-family: 'times new roman', times, serif;">✓
+                                                                                                Correct! The main
+                                                                                                branch, also known as a
+                                                                                                trunk, is the main
+                                                                                                branch of software
+                                                                                                development in a version
+                                                                                                control system. It is
+                                                                                                the branch where most of
+                                                                                                the development is done
+                                                                                                and changes from other
+                                                                                                branches are
+                                                                                                integrated.</span>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </section>
+                                                                        </form>
+                                                                        <section
+                                                                            class="iDevice_solution feedback js-hidden">
+                                                                            <h1>Solution</h1>
+                                                                            <ol>
+                                                                                <li><a
+                                                                                        href="#answer-0_340">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa0b0_337">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_343">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa1b0_337">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="#answer-0_346">Incorrect</a><span>
+                                                                                        (<a
+                                                                                            href="#sa2b0_337">Feedback</a>)</span>
+                                                                                </li>
+                                                                                <li><a href="#answer-0_349">Correct
+                                                                                        Option</a><span> (<a
+                                                                                            href="#sa3b0_337">Feedback</a>)</span>
+                                                                                </li>
+                                                                            </ol>
+                                                                        </section>
+                                                                    </section>
+                                                                    <br>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </article>
+                                            </section>
+                                        </div>
+                                        <script type="text/javascript"
+                                            src="../../js/GCS-Autoevaluacion/_intef_js.js"></script>
+                                    </body>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-------------------------------------------------------FOOTER------------------------------------------------------------->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h6 class="footerMsg">
+                    <strong>
+                        Social Networks
+                    </strong>
+                </h6>
+                <div class="row rowIcons">
+                    <div class="col">
+                        <a target="_blank" href="https://www.facebook.com/SoyUnibague/"
+                            class="fa fa-brands fa-facebook-f fa-xl"></a>
+                        <a target="_blank" href="https://twitter.com/unibagueoficial"
+                            class="fa fa-brands fa-twitter fa-xl"></a>
+                        <a target="_blank" href="https://www.youtube.com/user/universidadeibague"
+                            class="fa fa-brands fa-youtube fa-xl"></a>
+                        <a target="_blank" href="https://www.instagram.com/soyunibague/"
+                            class="fa fa-brands fa-instagram fa-xl"></a>
+                    </div>
+                </div>
+                <br>
+                <div class="row text-sm-center">
+                    <h6><a type="button" class="btn btn-outline-light" href="../creditos/creditos.html"> Credits
+                    </a></h6>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="footerMsg">DOER (Digital Open Educational Resource) Software Engineering - Copyright
+                <script>document.write(anio)</script> ©
+            </p>
+        </div>
+    </div>
+
+</footer>
+<!----------------------------------------------------------------------------------------------------------------------->
+
+</html>

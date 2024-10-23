@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="Alejandra Reyes y Maria José Villalba" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>REDA - Software Engineering</title>
+    <link rel="icon" type="image/x-icon" href="../resources/icons/window-principal.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='../css/gestionConfiguracionDelSoftware.css'>
+    <script src='../js/gestionConfiguracionDelSoftware.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-------------------------------------------------------NAVBAR------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" onclick="hacerAlgo()" href="../html/index.html">
+                <img src="../resources/images/Unibague-4.0.png" width="200" height="40">
+            </a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" onclick="mostrarme()" href="../html/inge-soft.html">
+                            Ingeniería de Software
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../html/des-web.html">
+                            Desarrollo Web
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../html/gestionyConfiguracionDelSoftware.html">
+                            GCS
+                        </a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <div class="row">
+                        <div class="col" style="padding: 0px 0px 0px 0px;">
+                            <a href="../../español/html/gestionyConfiguracionDelSoftware.html">
+                                <img src="../resources/icons/españa.ico" style="width: 90%;">
+                            </a>
+
+                        </div>
+                        <div class="col" style="padding: 0px 0px 0px 0px;">
+                            <a href="../../ingles/html/gestionyConfiguracionDelSoftware.html">
+                                <img src="../resources/icons/ingles.ico" style="width:90%">
+                            </a>
+
+                        </div>
+                        <div class="col">
+                            <a class="navbar-brand" target="_blank" href="https://www.unibague.edu.co/">
+                                <img src="../resources/images/logo_acreditacion.png" width="200" height="50">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------------------------------------------------------------------------------------------------->
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <div class="container">
+        <div class="square-box">
+            <div class="row">
+                <div class="d-flex flex-row">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcumbIndex">
+                        <ol class="breadcrumb p-2">
+                            <li class="breadcrumb-item "><a href="../html/index.html"
+                                    style="text-decoration:none">Presentación</a></li>
+                            <li class="breadcrumb-item active">Gestión y Configuración del Software</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="list-group">
+                        <a href="../html/gcs-sidebar/elementos-de-configuracion.html"
+                            class="list-group-item list-group-item-action" aria-current="true">
+                            Elementos de Configuración
+                        </a>
+                        <hr>
+                        <a href="../html/gcs-sidebar/actividades-de-gcs.html"
+                            class="list-group-item list-group-item-action">Actividades de GCS</a>
+                        <hr>
+                        <a href="../html/gcs-sidebar/auditoria-gcs.html"
+                            class="list-group-item list-group-item-action">Auditoría de la configuración del
+                            Software</a>
+                        <hr>
+                        <a href="../html/gcs-sidebar/informes-de-estado.html"
+                            class="list-group-item list-group-item-action">Informes de Estado</a>
+                        <hr>
+                        <a href="../html/gcs-sidebar/sistemas-control-versiones.html"
+                            class="list-group-item list-group-item-action">Sistemas Control de Versiones</a>
+                        <hr>
+                        <a href="../html/gcs-sidebar/autoevaluacion-gcs.html"
+                            class="list-group-item list-group-item-action">Autoevaluación</a>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <section id="gcs-main">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-header"><strong>Gestion de Configuración del Software</strong></h5>
+                                <br>
+                                <p class="card-text"><iframe
+                                        src="https://docs.google.com/presentation/d/e/2PACX-1vQ9i0scGxmsq0GyhNgsr3055j5Irbj69o2gYYH822bfTl40LjiPvww1DYLNUpTMj4e_Q_an2eUdt6DZ/embed?start=false&loop=false&delayms=30000"
+                                        frameborder="0" width="960" height="569" allowfullscreen="true"
+                                        mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                                </p>
+
+                                <p class="card-footer"><small>En resumen, la gestión y configuración del
+                                        software es un proceso esencial en el desarrollo de software que implica
+                                        la administración y control de los cambios y configuraciones del
+                                        software de un sistema de manera efectiva y eficiente. Este proceso es
+                                        importante para garantizar la calidad del software y la eficiencia en el
+                                        proceso de desarrollo.</small></p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-header"><strong>¿Por qué el cambio?</strong></h5><br>
+                                <p class="card-text">Uno de los principales motivos por los cuales se produce el cambio
+                                    en la gestión y configuración del software es para mejorar la eficiencia y la
+                                    calidad de los procesos. Los procesos de gestión y configuración del software pueden
+                                    ser complejos y difíciles de manejar, y a medida que las empresas y organizaciones
+                                    crecen y evolucionan, estos procesos pueden volverse obsoletos o inadecuados para
+                                    las nuevas necesidades. <br><br>
+                                    Otro motivo común para el cambio
+                                    en la gestión y configuración del software es la necesidad de mantener la
+                                    seguridad y la protección de los datos de la empresa. A medida que aumenta la
+                                    cantidad de datos y sistemas que se utilizan, también lo hace el riesgo de
+                                    brechas de seguridad y violaciones de datos. Por lo tanto, es necesario
+                                    actualizar constantemente los procesos y herramientas de gestión y configuración
+                                    del software para garantizar que los datos estén protegidos y se cumplan los
+                                    requisitos de cumplimiento normativo.</p>
+                                <p class="card-footer"><small class="text-body-secondary">El cambio en la gestión y
+                                        configuración del software es necesario para mantenerse al día con las
+                                        necesidades de la empresa, mejorar la eficiencia y la seguridad, cumplir con los
+                                        requisitos normativos y aprovechar las nuevas tecnologías para mejorar los
+                                        procesos de gestión y configuración del software.</small></p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-header"><strong>Mantenimiento vs GCS</strong></h5><br>
+                                <p class="card-text">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="card" style="width: 100%;height: 250px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><strong>Mantenimiento</strong></h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary"><small>Refiere al
+                                                        conjunto
+                                                        de actividades realizadas para mantener o mejorar la
+                                                        funcionalidad y
+                                                        la calidad del software después de que ha sido entregado y
+                                                        puesto en
+                                                        uso. Estas actividades pueden incluir corrección de errores,
+                                                        mejora
+                                                        del rendimiento, adición de nuevas funcionalidades, etc.</small>
+                                                </h6>
+                                                <p class="card-text"><strong>Se enfoca en mejorar la funcionalidad y la
+                                                        calidad
+                                                        del software después de que ha sido entregado</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card" style="width: 100%;height: 250px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><strong>GCS</strong></h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary"><small>Proceso de
+                                                        identificar, organizar y controlar los cambios en el software y
+                                                        en
+                                                        los artefactos relacionados (documentación, scripts,
+                                                        configuraciones, etc.). La GCS se enfoca en asegurar que el
+                                                        software
+                                                        se construya y entregue de manera consistente y controlada, y
+                                                        que
+                                                        cualquier cambio en el software sea rastreable y
+                                                        reversible.</small></h6>
+                                                <p class="card-text"><strong>Se enfoca en asegurar que el software se
+                                                        construya
+                                                        y entregue de manera consistente y controlada, y que los cambios
+                                                        en
+                                                        el software sean rastreables y reversibles.</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-header"><strong>Versión vs Liberacion del Producto Software</strong>
+                                </h5><br>
+                                <p class="card-text">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="card" style="width: 100%;height: 280px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><strong>Versión</strong></h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary"><small>Es una
+                                                        iteración del software que generalmente tiene un número de
+                                                        versión asociado, que puede incluir nuevas funcionalidades,
+                                                        mejoras, correcciones de errores y cambios menores en la
+                                                        interfaz de usuario. Las nuevas versiones de un software suelen
+                                                        ser lanzadas para mejorar y añadir características al producto
+                                                        existente.</small></h6>
+                                                <p class="card-text"><strong>Se refiere a una iteración del producto que
+                                                        incluye cambios y mejoras en su funcionalidad</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card" style="width: 100%;height: 280px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><strong>Liberación del Software</strong></h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary"><small>Es una versión
+                                                        del producto que se considera lo suficientemente estable y
+                                                        funcional para ser entregada a los clientes o usuarios finales.
+                                                        Una liberación se realiza después de que se han completado
+                                                        pruebas rigurosas y se han solucionado los problemas críticos
+                                                        que se han identificado durante las pruebas. Una liberación
+                                                        también puede incluir documentación actualizada, guías de
+                                                        usuario y otros recursos que ayuden al usuario final a utilizar
+                                                        el software de manera efectiva.</small></h6>
+                                                <p class="card-text"><strong>Se refiere a una versión específica que ha
+                                                        pasado las pruebas y es lo suficientemente estable y funcional
+                                                        para ser entregada a los clientes o usuarios finales.</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-header"><strong>Línea Base</strong>
+                                </h5><br>
+                                <p class="card-text">
+                                    En la gestión de configuración del software, una línea base (o "baseline" en inglés)
+                                    es una referencia establecida y fija que representa un estado específico y
+                                    controlado de los elementos de configuración de un proyecto de software en un
+                                    momento dado. La línea base sirve como punto de referencia para el seguimiento y
+                                    control de los cambios realizados durante el ciclo de vida del software.
+                                    <br><br>
+                                    Imaginemos un proyecto de desarrollo de software para una aplicación móvil de
+                                    gestión de tareas. En este caso, un ejemplo de una línea base en la gestión de
+                                    configuración del software podría ser:
+                                    <br>
+                                    
+                                    <ul class="text-start">
+                                        <strong>Línea Base 1.0:</strong>
+                                        <br><br>
+                                        <li>Archivos de código fuente de la aplicación (todos los módulos y componentes).</li>
+                                        <li>Documentos de diseño de la interfaz de usuario y la arquitectura del sistema.</li>
+                                        <li>Archivos de configuración de la base de datos y conexiones.</li>
+                                        <li>Bibliotecas de terceros utilizadas en el proyecto.</li>
+                                        <li>Archivos de recursos multimedia (imágenes, iconos, etc.).</li>
+                                        <li>Documentación técnica relacionada con la versión 1.0.</li>
+                                      </ul>
+                                    
+                                    <br>
+                                    En este ejemplo, la Línea Base 1.0 representa la versión inicial y estable de la
+                                    aplicación móvil de gestión de tareas. Los elementos de configuración mencionados,
+                                    como los archivos de código fuente, documentos de diseño y configuración, forman
+                                    parte de la línea base y se consideran como el estado de referencia para el proyecto
+                                    en ese momento.
+                                    <br><br>
+                                    A partir de esta línea base, cualquier cambio o evolución en el software será
+                                    gestionado mediante el control de cambios y el establecimiento de nuevas líneas
+                                    bases. Por ejemplo, si se requiere añadir una nueva funcionalidad a la aplicación,
+                                    se realizarán cambios en los archivos de código fuente y otros elementos
+                                    pertinentes. Estos cambios serán gestionados, evaluados y, una vez aprobados, se
+                                    establecerá una nueva línea base (por ejemplo, Línea Base 2.0) que incluirá los
+                                    elementos actualizados y reflejará el nuevo estado del software.
+                                    <br><br>
+                                    La línea base proporciona un punto de referencia claro y estable para el desarrollo,
+                                    seguimiento y control de los cambios en el software a lo largo del ciclo de vida del
+                                    proyecto. Además, permite la trazabilidad y auditoría de los cambios realizados,
+                                    facilita la reproducibilidad y garantiza la consistencia y la integridad del
+                                    software en cada versión.
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="container">
+                            <div class="row justify-content-center text-center">
+                                <div class="col">
+                                    <iframe width="800" height="400" src="https://www.youtube.com/embed/147tMkP6umk"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-------------------------------------------------------FOOTER------------------------------------------------------------->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h6 class="footerMsg">
+                    <strong>
+                        Redes Sociales
+                    </strong>
+                </h6>
+                <div class="row rowIcons">
+                    <div class="col">
+                        <a target="_blank" href="https://www.facebook.com/SoyUnibague/"
+                            class="fa fa-brands fa-facebook-f fa-xl"></a>
+                        <a target="_blank" href="https://twitter.com/unibagueoficial"
+                            class="fa fa-brands fa-twitter fa-xl"></a>
+                        <a target="_blank" href="https://www.youtube.com/user/universidadeibague"
+                            class="fa fa-brands fa-youtube fa-xl"></a>
+                        <a target="_blank" href="https://www.instagram.com/soyunibague/"
+                            class="fa fa-brands fa-instagram fa-xl"></a>
+                    </div>
+                </div>
+                <br>
+                <div class="row text-sm-center">
+                    <h6><a type="button" class="btn btn-outline-light" href="./creditos/creditos.html"> Créditos </a></h6>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="footerMsg">REDA (Recurso Educativo Digital Abierto) Ingeniería de Software - Derechos de autor
+                <script>document.write(anio)</script> ©
+            </p>
+        </div>
+    </div>
+
+</footer>
+<!----------------------------------------------------------------------------------------------------------------------->
+
+</html>

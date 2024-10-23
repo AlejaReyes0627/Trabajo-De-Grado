@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="Alejandra Reyes y Maria José Villalba" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>REDA - Ingeniería de Software</title>
+    <link rel="icon" type="image/x-icon" href="../resources/icons/window-principal.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='../css/des-web.css'>
+    <script src='../js/index.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-------------------------------------------------------NAVBAR------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" onclick="hacerAlgo()" href="../html/index.html">
+                <img src="../resources/images/Unibague-4.0.png" width="200" height="40">
+            </a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" onclick="mostrarme()" href="../html/inge-soft.html">
+                            Ingeniería de Software
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../html/des-web.html">
+                            Desarrollo Web
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../html/gestionyConfiguracionDelSoftware.html">
+                            GCS
+                        </a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <div class="row">
+                        <div class="col" style="padding: 0px 0px 0px 0px;">
+                            <a href="../../español/html/des-web.html">
+                                <img src="../resources/icons/españa.ico" style="width: 90%;">
+                            </a>
+                            
+                        </div>
+                        <div class="col" style="padding: 0px 0px 0px 0px;">
+                            <a href="../../ingles/html/des-web.html">
+                                <img src = "../resources/icons/ingles.ico" style="width:90%">
+                            </a>
+                            
+                        </div>
+                        <div class="col">
+                            <a class="navbar-brand" target="_blank" href="https://www.unibague.edu.co/">
+                                <img src="../resources/images/logo_acreditacion.png" width="200" height="50">
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------------------------------------------------------------------------------------------------->
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <div class="container">
+        <div class="square-box">
+            <div class="row">
+                <div class="d-flex flex-row">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcumbIndex">
+                        <ol class="breadcrumb p-2">
+                            <li class="breadcrumb-item "><a href="../html/index.html"
+                                    style="text-decoration:none">Presentación</a></li>
+                            <li class="breadcrumb-item active">Desarrollo Web</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="list-group">
+                        <a href="../html/ingesoft-sidebar/backfront.html" class="list-group-item list-group-item-action" aria-current="true">
+                            Desarrollo Backend y Frontend
+                        </a>
+                        <a href="../html/ingesoft-sidebar/tipos-arqui.html" class="list-group-item list-group-item-action">Tipos de Arquitectura</a>
+                        <a href="../html/ingesoft-sidebar/patronesdiseñosoft.html" class="list-group-item list-group-item-action">Patrones de diseño de Software</a>
+                        <a href="../html/ingesoft-sidebar/solid-cleancode.html" class="list-group-item list-group-item-action">Principios SOLID y Clean Code</a>
+                        <a href="../html/ingesoft-sidebar/apis-domi-host.html" class="list-group-item list-group-item-action">APIS/Dominio/Hosting</a>
+                      </div>
+                </div>
+                <div class="col-10">
+                    <section id="desweb-main">
+                        <div class="container">
+                            <div class="card" style="max-width: 100%;">
+                                <div class="row">
+                                    <div class="card-body">
+                                      <h5 class="card-title">¿Qué es el Desarrollo Web?</h5>
+                                      <p class="card-text">"El desarrollo de aplicaciones web se refiere al proceso de crear 
+                                        aplicaciones informáticas que se ejecutan en un navegador web. Estas aplicaciones están 
+                                        diseñadas para funcionar en una variedad de dispositivos y sistemas operativos, y pueden
+                                        ser accesibles a través de Internet o de una red privada.
+
+                                        El desarrollo de aplicaciones web implica varias etapas, 
+                                        que pueden incluir el diseño de la interfaz de usuario, la codificación
+                                        del software, la integración con bases de datos y otros sistemas, la prueba 
+                                        y la implementación. Los desarrolladores web utilizan lenguajes de programación
+                                        como HTML, CSS, JavaScript y otros lenguajes de programación web para crear 
+                                        aplicaciones que sean interactivas y dinámicas.
+
+                                        Las aplicaciones web pueden ser muy diversas, desde aplicaciones simples
+                                        como formularios de contacto y páginas web estáticas, hasta aplicaciones 
+                                        más complejas como sistemas de gestión de contenido, tiendas en línea y 
+                                        redes sociales. El desarrollo de aplicaciones web también puede involucrar
+                                        el uso de marcos y bibliotecas de software, así como la integración de 
+                                        tecnologías como la inteligencia artificial y el aprendizaje automático."</p>
+                                      <p class="card-footer text-muted text-end"><small class="text-body-secondary">Última edición en <script>document.write(anio)</script></small></p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="desweb-main">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h1>Tipos de aplicaciones Web</h1>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Aplicación web estática</h5>
+                                    <p>"Las aplicaciones web estáticas son sitios web que no requieren interacción 
+                                        con los servidores para mostrar su contenido. Esto significa que el contenido 
+                                        de la página se muestra de la misma manera para todos los usuarios que lo 
+                                        visitan, sin cambios dinámicos en función de las interacciones del usuario o 
+                                        los datos almacenados en la base de datos.
+
+                                        Este sitio web se puede colocar en servidores estáticos como la página Amazon S3 
+                                        o GitHub, lo que significa que los servidores web dinámicos como Apache o Nginx 
+                                        no son necesarios para acomodar el sitio.
+                                    </p>
+                                    <img class="imgPhrase" src="../resources/images/webestatica.png" width="350" height="100" />
+                                    <br> 
+                                    <br> 
+                                    <h5 class="card-title">Aplicación web dinámica</h5>
+                                    <p>"Estas aplicaciones se crean con lenguajes de programación en el lado del servidor, 
+                                        como PHP, Python o Ruby, y se ejecutan en un servidor web dinámico como Apache o NGINX.
+
+                                        En resumen, las aplicaciones web dinámicas ofrecen al usuario más interactiva y más 
+                                        personalizada y son ideales para sitios web que requieren una funcionalidad extendida 
+                                        y la interacción de más usuarios."
+                                    </p>
+                                    <img class="imgPhrase" src="../resources/images/webdinamica.png" width="350" height="100" />
+                                    <br> 
+                                    <br>
+                                    <h5 class="card-title">Aplicación web con gestor de contenidos</h5>
+                                    <p>"La aplicación web con Content Manager (CMS) es una plataforma que los usuarios
+                                        pueden crear, publicar, administrar y editar contenido en el sitio web sin 
+                                        conocimiento avanzado de programación. Con CMS, los usuarios pueden crear y publicar 
+                                        contenido a través de interfaces de usuario simples. Esto hace que sea más fácil crear 
+                                        y mantener un sitio web.
+
+                                        Con CMS, los usuarios pueden crear y publicar contenido en varios formatos, 
+                                        como artículos, imágenes, videos y audio.
+                                        
+                                        También es útil para los sitios web de colaboración porque los 
+                                        usuarios pueden colaborar con la creación y administración de contenido.
+                                        
+                                        En resumen, CMS es una herramienta que ayuda a los usuarios a crear y publicar 
+                                        contenido sin la necesidad de un conocimiento avanzado de la programación, por lo 
+                                        que es útil para crear y administrar contenido en el sitio web."
+                                    </p>
+                                    <img class="imgPhrase" src="../resources/images/gestorweb.jpg" width="350" height="120" />
+                                    <br> 
+                                    <br>
+                                    <h5 class="card-title">Aplicación E-Commerce</h5>
+                                    <p>"El comercio electrónico o el comercio electrónico se refiere a la compra y 
+                                        venta de productos y servicios en línea a través de una plataforma digital.
+
+                                        Los sitios de comercio electrónico pueden variar según la complejidad y la 
+                                        funcionalidad, en pequeñas tiendas en línea que venden productos de nicho para grandes 
+                                        empresas en empresas comerciales electrónicas, como Amazon, que venden una amplia gama 
+                                        de productos y servicios en todo el mundo.
+                                        
+                                        Los sitios comerciales electrónicos también pueden usar métodos de marketing digital, 
+                                        como la optimización de los motores de búsqueda (SEO), el contenido, el mercado, la 
+                                        publicidad en línea y el correo electrónico para atraer nuevos clientes y aumentar las ventas.
+                                        
+                                        Los sitios comerciales electrónicos son ideales para empresas que desean expandir sus 
+                                        capacidades y vender productos y servicios en línea."
+                                    </p>
+                                    <img class="imgPhrase" src="../resources/images/ecommerce.jpg" width="250" height="120" />
+                                    <br> 
+                                    <br>
+                                    <h5 class="card-title">Portal Web App </h5>
+                                    <p>"Un Portal Web App es una aplicación que actúa como una plataforma centralizada
+                                         para acceder a una variedad de servicios y recursos en línea. Estos 
+                                         portales generalmente son utilizados por empresas, organizaciones y agencias 
+                                         gubernamentales para dar a sus clientes o usuarios acceso a información y recursos.
+
+                                        Los portales de Web App son ideales para empresas y organizaciones que centralizan sus 
+                                        servicios y recursos en línea y ofrecen a sus usuarios una experiencia personalizada.
+                                        
+                                        En resumen, los portales de la aplicación web son aplicaciones web que ofrecen una 
+                                        plataforma centralizada para servicios y recursos en línea. Ofrecen a los usuarios una 
+                                        experiencia personalizada y son ideales para empresas y organizaciones que desean 
+                                        centralizar sus servicios en línea y mejorar la eficiencia y la cooperación interna."
+                                    </p>
+                                    <img class="imgPhrase" src="../resources/images/portalwebapp.jpg" width="250" height="120" />
+                                </div>
+                                <div class="card-footer text-muted text-end">
+                                    Creado en 2023
+                                </div>
+                            </div>
+                            <section id="desweb-button-multimedia2">
+                                <div class="container text-center second-multimedia">
+                                    <div class="row justify-content-center">
+                                        <div class="col">
+                                            <h2 class="middleTittle">Actividad para afianzar conocimientos</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <iframe width="795" height="690" frameborder="0"
+                                                src="https://es.educaplay.com/juego/14836505-tipos_de_aplicaciones_web.html"
+                                                allowfullscreen title="Actividad número 3"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+</body>
+
+<!-------------------------------------------------------FOOTER------------------------------------------------------------->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h6 class="footerMsg">
+                    <strong>
+                        Redes Sociales
+                    </strong>
+                </h6>
+                <div class="row rowIcons">
+                    <div class="col">
+                        <a target="_blank" href="https://www.facebook.com/SoyUnibague/" class="fa fa-brands fa-facebook-f fa-xl"></a>
+                        <a target="_blank" href="https://twitter.com/unibagueoficial" class="fa fa-brands fa-twitter fa-xl"></a>
+                        <a target="_blank" href="https://www.youtube.com/user/universidadeibague"
+                            class="fa fa-brands fa-youtube fa-xl"></a>
+                        <a target="_blank" href="https://www.instagram.com/soyunibague/" class="fa fa-brands fa-instagram fa-xl"></a>
+                    </div>
+                </div>
+                <br>
+                <div class="row text-sm-center">
+                    <h6><a type="button" class="btn btn-outline-light" href="./creditos/creditos.html"> Créditos </a></h6>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="footerMsg">REDA (Recurso Educativo Digital Abierto) Ingeniería de Software - Derechos de autor
+                <script>document.write(anio)</script> ©
+            </p>
+        </div>
+    </div>
+
+</footer>
+<!----------------------------------------------------------------------------------------------------------------------->
+
+</html>

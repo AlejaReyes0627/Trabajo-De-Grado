@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="Alejandra Reyes and Maria José Villalba" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DOER - Software Engineering</title>
+    <link rel="icon" type="image/x-icon" href="../../resources/icons/window-principal.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='../../css/ingesoft-sidebar/tipos-arqui.css'>
+    <script src='../../js/index.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-------------------------------------------------------NAVBAR------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../../resources/images/Unibague-4.0.png" width="200" height="40">
+            </a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../inge-soft.html">
+                            Software Engineering
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../des-web.html">
+                            Web Development
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navItem navbar-brand" href="../gestionyConfiguracionDelSoftware.html">
+                            SCM
+                        </a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <div class="row">
+                        <div class="col" style="padding: 0px 0px 0px 0px;">
+                            <a href="../../../español/html/ingesoft-sidebar/tipos-arqui.html">
+                                <img src="../../resources/icons/españa.ico" style="width: 90%;">
+                            </a>
+                            
+                        </div>
+                        <div class="col" style="padding: 0px 0px 0px 0px;">
+                            <a href="../../../ingles/html/ingesoft-sidebar/tipos-arqui.html">
+                                <img src = "../../resources/icons/ingles.ico" style="width:90%">
+                            </a>
+                            
+                        </div>
+                        <div class="col">
+                            <a class="navbar-brand" target="_blank" href="https://www.unibague.edu.co/">
+                                <img src="../../resources/images/logo_acreditacion.png" width="200" height="50">
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------------------------------------------------------------------------------------------------->
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <div class="container">
+        <div class="square-box">
+            <div class="row">
+                <div class="d-flex flex-row">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcumbIndex">
+                        <ol class="breadcrumb p-2">
+                            <li class="breadcrumb-item "><a href="../index.html"
+                                    style="text-decoration:none">Introduction</a></li>
+                            <li class="breadcrumb-item"><a href="../des-web.html"
+                                    style="text-decoration:none">Web Development</a></li>
+                            <li class="breadcrumb-item active">Architecture Types</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="list-group">
+                        <a href="./backfront.html" class="list-group-item list-group-item-action" aria-current="true">
+                            Backend and Frontend Development
+                        </a>
+                        <a href="./tipos-arqui.html" class="list-group-item list-group-item-action">Architecture Types</a>
+                        <a href="./patronesdiseñosoft.html" class="list-group-item list-group-item-action">Software Design Patterns</a>
+                        <a href="./solid-cleancode.html" class="list-group-item list-group-item-action">SOLID principles and Clean Code</a>
+                        <a href="./apis-domi-host.html" class="list-group-item list-group-item-action">APIS/Domain/Hosting</a>
+                      </div>
+                </div>
+                <div class="col-10">
+                    <section id="desweb-main">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-header"><strong>Monolithic architecture</strong></h5><br>
+                                <p class="card-text">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="card" style="width: 100%;height: 450px;">
+                                            <div class="card-body">
+                                                <p class="card-text">Monolithic architecture
+                                                    is a software architecture with all the functions and components of the
+                                                    application in a single execution unit.
+                                                   
+                                                    In the monolithic architecture, all application modules are
+                                                    integrate and run in a single process on the same server.
+
+                                                    A typical monolithic architecture cannot be reused in any way.
+                                                    independent because the application components are designed
+                                                    to work closely.
+                                                   
+                                                    Monolithic architecture has several drawbacks in terms of
+                                                    of scalability and flexibility, but it has some advantages.</p>
+
+                                                    <img class="imgPhrase" src="../../resources/images/arquimono.png" width="130" height="200" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card" style="width: 100%;height: 450px;">
+                                            <div class="card-body">
+                                                <br> 
+                                                <h5 class="card-title"><strong>Architectural scheme</strong></h5>
+                                                <img class="imgPhrase" src="../../resources/images/esquemamono.png" width="490" height="300" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </p>
+
+                                <h5 class="card-header"><strong>Microservices Architecture</strong></h5><br>
+                                <p class="card-text">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="card" style="width: 100%;height: 450px;">
+                                            <div class="card-body">
+                                                <p class="card-text">Microservices architecture is an approach to
+                                                    architecture for the design of a software system based on the
+                                                    creation of small, independent services that communicate
+                                                    with each other through appropriately defined standard interfaces.
+
+                                                    In this architecture, each service is focused on execution.
+                                                    of a specific task, improving the module and flexibility
+                                                    throughout the system design.</p>
+
+                                                    <img class="imgPhrase" src="../../resources/images/arquimicro.png" width="230" height="230" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card" style="width: 100%;height: 450px;">
+                                            <div class="card-body">
+                                                <br> 
+                                                <h5 class="card-title"><strong>Architectural scheme</strong></h5>
+                                                <img class="imgPhrase" src="../../resources/images/esquemamicro.png" width="490" height="300" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </p>
+                                <h5 class="card-header"><strong>Monolithic Architecture VS Microservices Architecture</strong></h5><br>
+                                <p class="card-text">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="card" style="width: 200%;height: 470px;">
+                                            <div class="card-body">
+                                                <div class="row justify-content-center text-center">
+                                                    <h5 class="card-title"><strong>Explanatory video about the differences between architectures</strong></h5>
+                                                    <div class="col">
+                                                        <iframe width="800" height="400" src="https://www.youtube.com/embed/RJkn9VHM7lc" 
+                                                            title="YouTube video player" frameborder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                            allowfullscreen>
+                                                        </iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-------------------------------------------------------FOOTER------------------------------------------------------------->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h6 class="footerMsg">
+                    <strong>
+                        Social Networks
+                    </strong>
+                </h6>
+                <div class="row rowIcons">
+                    <div class="col">
+                        <a target="_blank" href="https://www.facebook.com/SoyUnibague/" class="fa fa-brands fa-facebook-f fa-xl"></a>
+                        <a target="_blank" href="https://twitter.com/unibagueoficial" class="fa fa-brands fa-twitter fa-xl"></a>
+                        <a target="_blank" href="https://www.youtube.com/user/universidadeibague"
+                            class="fa fa-brands fa-youtube fa-xl"></a>
+                        <a target="_blank" href="https://www.instagram.com/soyunibague/" class="fa fa-brands fa-instagram fa-xl"></a>
+                    </div>
+                </div>
+                <br>
+                <div class="row text-sm-center">
+                    <h6><a type="button" class="btn btn-outline-light" href="../creditos/creditos.html"> Credits
+                    </a></h6>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="footerMsg">DOER (Digital Open Educational Resource) Software Engineering - Copyright
+                <script>document.write(anio)</script> ©
+            </p>
+        </div>
+    </div>
+
+</footer>
+<!----------------------------------------------------------------------------------------------------------------------->
+
+</html>
